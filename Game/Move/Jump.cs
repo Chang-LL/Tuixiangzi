@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game
+namespace MGame
 {
-    public class Actor : CellContents
+    public class Jump : MoveBase
     {
     }
 }

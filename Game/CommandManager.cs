@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game
+namespace MGame
 {
     public class CommandManager
     {
+
         public CommandManager()
         {
             throw new System.NotImplementedException();
@@ -33,7 +34,7 @@ namespace Game
             throw new System.NotImplementedException();
         }
 
-        public void Execute()
+        public void Execute(CommandBase command)
         {
             throw new System.NotImplementedException();
         }

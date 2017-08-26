@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game
+namespace MGame
 {
-    public class JumpCommand : CommandBase
+    public class PushCommand : CommandBase
     {
-        public JumpCommand()
+        private int level;
+
+        public PushCommand()
         {
             throw new System.NotImplementedException();
         }

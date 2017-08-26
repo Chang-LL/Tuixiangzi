@@ -3,23 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game
+namespace MGame
 {
     public abstract class CommandBase
     {
-        public void Execute()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract void Execute();
 
-        public void Redo()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract void Redo();
 
-        public void Undo()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract void Undo();
     }
 }

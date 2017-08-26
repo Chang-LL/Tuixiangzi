@@ -65,7 +65,9 @@
     <Compile Include="WallCell.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="GameDiagram1.cd" />
+    <None Include="GameDiagram1.cd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

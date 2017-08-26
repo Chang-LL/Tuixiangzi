@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Game
+namespace MGame
 {
-    public class Move : MoveBase
+    public class Push : MoveBase
     {
-        public Move(Direction direction)
+        public Push(Location destination)
         {
             throw new System.NotImplementedException();
         }
 
-        public Direction Direction
+        public Push(Move[] route)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Location Desrination
         {
             get => default(int);
             set
@@ -20,7 +25,7 @@ namespace Game
             }
         }
 
-        public CellContents PushedContents
+        public Move[] Route
         {
             get => default(int);
             set
