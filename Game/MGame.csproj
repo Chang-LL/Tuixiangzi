@@ -7,7 +7,7 @@
     <ProjectGuid>{9DA8EBD1-B5D6-4B10-A0C6-9BB2F3AB8BA6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Game</RootNamespace>
+    <RootNamespace>MGame</RootNamespace>
     <AssemblyName>Game</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,34 +41,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actor.cs" />
+    <Compile Include="CellContents\Actor\Actor.cs" />
     <Compile Include="Cell.cs" />
     <Compile Include="CellContents.cs" />
+    <Compile Include="CellContents\Actor\Actor.Jump.cs" />
+    <Compile Include="CellContents\Actor\Actor.Push.cs" />
+    <Compile Include="CellContents\Actor\Actor.Step.cs" />
     <Compile Include="CommandBase.cs" />
     <Compile Include="CommandManager.cs" />
-    <Compile Include="FloorCell.cs" />
+    <Compile Include="DefaultSokobanService.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Cells\FloorCell.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameState.cs" />
-    <Compile Include="GoalCell.cs" />
+    <Compile Include="Cells\GoalCell.cs" />
     <Compile Include="ISokobanService.cs" />
-    <Compile Include="Jump.cs" />
-    <Compile Include="JumpCommand.cs" />
+    <Compile Include="Moves\Jump.cs" />
+    <Compile Include="Commands\JumpCommand.cs" />
     <Compile Include="Level.cs" />
+    <Compile Include="LevelCode.cs" />
     <Compile Include="LevelContentBase.cs" />
-    <Compile Include="Move.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Moves\Move.cs" />
     <Compile Include="MoveBase.cs" />
-    <Compile Include="MoveCommand.cs" />
+    <Compile Include="Commands\MoveCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Push.cs" />
-    <Compile Include="PushCommand.cs" />
-    <Compile Include="SpaceCell.cs" />
-    <Compile Include="Treasure.cs" />
-    <Compile Include="WallCell.cs" />
+    <Compile Include="Moves\Push.cs" />
+    <Compile Include="Commands\PushCommand.cs" />
+    <Compile Include="SokobanException.cs" />
+    <Compile Include="Cells\SpaceCell.cs" />
+    <Compile Include="CellContents\Treasure.cs" />
+    <Compile Include="Cells\WallCell.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="GameDiagram1.cd">
+    <None Include="Diagrams\GameLevelCell.cd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PathFinders\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

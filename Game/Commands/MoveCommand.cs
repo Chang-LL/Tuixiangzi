@@ -7,32 +7,37 @@ namespace MGame
 {
     public class MoveCommand : CommandBase
     {
-        public MoveCommand()
+        Level level;
+        public MoveCommand(Level level, Direction direction)
         {
-            throw new System.NotImplementedException();
+            Direction = direction;//获取方向
+            this.level = level ?? throw new ArgumentNullException("level");   //获取Level实例
         }
 
-        public Location Direction
+        public Direction Direction
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            private set;
         }
 
-        public void Execute()
+        public override void Execute()
         {
-            throw new System.NotImplementedException();
+            Move move = new Move(Direction);//实例化Move类
+            level.Actor.DoMove(move);//调用DoMove实现单步移动
         }
-
-        public void Redo()
+        /// <summary>
+        /// 撤消己经执行的步骤回到原来的位置		
+        /// </summary>
+        public override void Undo()
         {
-            throw new System.NotImplementedException();
+            level.Actor.UndoMove();//使用UndoMove
         }
-
-        public void Undo()
+        /// <summary>
+        /// 重作己经被撤消的命令
+        /// </summary>
+        public override void Redo()
         {
-            throw new System.NotImplementedException();
+            Execute();
         }
     }
 }

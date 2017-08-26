@@ -7,5 +7,9 @@ namespace MGame
 {
     public class SpaceCell : Cell
     {
+        public SpaceCell(Location location, Level level)
+               : base("Space", location, level)
+        {
+        }
     }
 }

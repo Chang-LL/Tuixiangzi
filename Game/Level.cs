@@ -10,13 +10,6 @@ namespace MGame
     {
         private List<GoalCell> goals;
         Cell[][] cells;
-        //private Cell[][] cells
-        //{
-        //    get => default(Cell);
-        //    set
-        //    {
-        //    }
-        //}
         public Cell this[int rowNumber, int columnNumber]
         {
             get

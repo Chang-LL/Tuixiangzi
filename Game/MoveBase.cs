@@ -9,10 +9,9 @@ namespace MGame
     {
         public bool Undo
         {
-            get => default(int);
-            set
-            {
-            }
+            get ;
+            set;
+            
         }
     }
 }
