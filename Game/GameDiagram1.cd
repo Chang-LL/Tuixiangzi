@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="MGame.Game" Collapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAESAAAAACAAEAEAICCAEBAEgABAAIABAAAkAAAIIAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="sobanService" />
+      <Property Name="Level" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MGame.Level" Collapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAABAAIAAgAAACAIAAAACQAggAAAAAAAgAAAAAgA=</HashCode>
+      <FileName>Level.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cells" />
+      <Property Name="Cells" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MGame.Cell" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAEMABAQAAEAAAAADAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MGame.GoalCell" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GoalCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MGame.SpaceCell" Collapsed="true">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpaceCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MGame.WallCell" Collapsed="true">
+    <Position X="0.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WallCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MGame.FloorCell" Collapsed="true">
+    <Position X="5.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FloorCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MGame.LevelContentBase">
+    <Position X="6.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LevelContentBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Game.CellContents" Collapsed="true">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAJAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>CellContents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Actor" Collapsed="true">
+    <Position X="12" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Treasure" Collapsed="true">
+    <Position X="9.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Treasure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.MoveBase">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MoveBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Move" Collapsed="true">
+    <Position X="7" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Move.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Jump">
+    <Position X="9.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jump.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Push" Collapsed="true">
+    <Position X="11.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Push.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.CommandManager" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAADAAAACAAAAAAAAABAAAA=</HashCode>
+      <FileName>CommandManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="refoStack" />
+      <Property Name="CommandStack" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Game.CommandBase">
+    <Position X="4" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.JumpCommand">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAABAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>JumpCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.MoveCommand">
+    <Position X="2.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MoveCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.PushCommand">
+    <Position X="5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAABAAEAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PushCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MGame.ISokobanService" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISokobanService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MGame.GameState" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggEAAAAAAAAAAAAQAAIAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>GameState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
