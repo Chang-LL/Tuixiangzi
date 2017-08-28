@@ -9,23 +9,19 @@ namespace MGame
     {
         public Move(Direction direction)
         {
-            throw new System.NotImplementedException();
+            Direction = direction;
         }
 
         public Direction Direction
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public CellContents PushedContents
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }

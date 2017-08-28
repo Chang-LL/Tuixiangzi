@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using MGame.PathFinders;
 
 namespace MGame
 {
@@ -53,7 +54,7 @@ namespace MGame
                     #region Anonymous Push method.
                     lock (moveLock)
                     {
-                        PushPathFinder pathFinder = new PushPathFinder(Cell, push.Destination);
+                        PushPathFinder pathFinder = new PushPathFinder(Cell, push.Desrination);
                         if (pathFinder.TryFindPath())
                         {
                             for (int i = 0; i < pathFinder.Route.Length; i++)

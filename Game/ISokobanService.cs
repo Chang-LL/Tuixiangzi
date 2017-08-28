@@ -7,7 +7,7 @@ namespace MGame
 {
     public interface ISokobanService
     {
-        int LevelCount { get; set; }
+        int LevelCount { get;  }
         string GetMap(int levelNumber);
     }
 }

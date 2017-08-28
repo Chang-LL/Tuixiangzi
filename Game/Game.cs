@@ -15,7 +15,7 @@ namespace MGame
         SynchronizationContext context =
             SynchronizationContext.Current;
         private GameState gameState;
-        string levelDirectory = @"..\..\..\..\Levels\";
+        string levelDirectory = @"..\..\..\Levels\";
 
 
 
@@ -26,7 +26,7 @@ namespace MGame
 
         public Game(ISokobanService sokobanService)
         {
-            sobanService = sobanService;
+           this.sokobanService = sokobanService;
         }
 
         public GameState GameState

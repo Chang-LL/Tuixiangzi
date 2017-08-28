@@ -7,34 +7,31 @@ namespace MGame
 {
     public class PushCommand : CommandBase
     {
-        private int level;
+        readonly Level level;
 
-        public PushCommand()
+        public PushCommand(Level level, Location destination)
         {
-            throw new System.NotImplementedException();
+            Destination = destination;
+            this.level = level ?? throw new ArgumentNullException("level");
         }
-
         public Location Destination
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            private set;
         }
 
-        public void Execute()
+        public override void Execute()
         {
-            throw new System.NotImplementedException();
+            Push push = new Push(Destination);
+            level.Actor.DoMove(push);
         }
-
-        public void Redo()
+        public override void Undo()
         {
-            throw new System.NotImplementedException();
+            level.Actor.UndoMove();
         }
-
-        public void Undo()
+        public override void Redo()
         {
-            throw new System.NotImplementedException();
+            Execute();
         }
     }
 }

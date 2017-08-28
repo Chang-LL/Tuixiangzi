@@ -65,6 +65,8 @@
     <Compile Include="Moves\Move.cs" />
     <Compile Include="MoveBase.cs" />
     <Compile Include="Commands\MoveCommand.cs" />
+    <Compile Include="PathFinders\PushPathFinder.cs" />
+    <Compile Include="PathFinders\SearchPathFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Moves\Push.cs" />
     <Compile Include="Commands\PushCommand.cs" />
@@ -81,8 +83,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PathFinders\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

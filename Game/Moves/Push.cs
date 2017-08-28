@@ -9,28 +9,23 @@ namespace MGame
     {
         public Push(Location destination)
         {
-            throw new System.NotImplementedException();
+            Desrination = destination;
         }
-
-        public Push(Move[] route)
-        {
-            throw new System.NotImplementedException();
-        }
-
+       
         public Location Desrination
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public Move[] Route
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            private set;
+        }
+        public Push(Move[] route)
+        {
+            Route = route;
         }
     }
 }
